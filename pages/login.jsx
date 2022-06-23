@@ -16,7 +16,7 @@ export default function Login() {
     };
 
     axios
-      .post("/api/login", payload)
+      .post("/api/auth/login", payload)
       .then((response) => {
         router.push("/");
         console.log(response);
