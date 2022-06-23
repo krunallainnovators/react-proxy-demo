@@ -12,11 +12,11 @@ export default function Login() {
 
     const payload = {
       username,
-      password,
+      password
     };
 
     axios
-      .post("/api/auth/login", payload)
+      .post("/api/login", payload)
       .then((response) => {
         router.push("/");
         console.log(response);
